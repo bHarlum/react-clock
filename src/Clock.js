@@ -9,7 +9,7 @@ const Clock = (props) => {
     return (
         <div className="container">
             <h3 className="label">{props.timezone}</h3>
-            <div className="clock-face" style={{ backgroundImage: `url(/${props.icon})` }}>
+            <div className="clock-face" style={{ backgroundImage: `url(${props.icon})` }}>
                 <div className="clock">
                     <div className="hours-container">
                         <div className="hours" style={{ transform: `rotateZ(${(hours * 30) + (minutes / 2)}deg)`}}></div>
